@@ -5,10 +5,8 @@ import {
   Send,
   CheckCircle2,
   AlertCircle,
-  Phone,
   MessageSquare,
   Sparkles,
-  ArrowRight,
   Clock,
 } from "lucide-react";
 
