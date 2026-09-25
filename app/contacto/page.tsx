@@ -5,7 +5,6 @@ import {
   Mail,
   MapPin,
   Clock,
-  Sparkle,
   MessageSquare,
   Navigation,
   Bus,
@@ -54,11 +53,6 @@ export default function ContactoPage() {
         {/* Content Container */}
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 w-full">
           <div className="max-w-xl lg:max-w-xl">
-            <span className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full text-xs font-semibold tracking-wide uppercase text-[#DA7715] bg-[#DA7715]/10 border border-[#DA7715]/20 mb-5 backdrop-blur-sm">
-              <Sparkle className="w-3.5 h-3.5 fill-[#DA7715]" />
-              Atención Personalizada · Barrio Delicias
-            </span>
-
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-light tracking-tight text-stone-900 leading-[1.1]">
               Contacto &amp; Citas
             </h1>

@@ -11,7 +11,6 @@ import {
   Award,
   CheckCircle2,
   Calendar,
-  Sparkle,
 } from "lucide-react";
 
 export const metadata: Metadata = {
@@ -49,10 +48,6 @@ export default function QuienesSomosPage() {
         {/* Content Container */}
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 w-full">
           <div className="max-w-xl lg:max-w-xl">
-            <span className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full text-xs font-semibold tracking-wide uppercase text-[#DA7715] bg-[#DA7715]/10 mb-5">
-              <Sparkle className="w-3.5 h-3.5 fill-[#DA7715]" />
-              Trayectoria y Pasión
-            </span>
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight text-gray-900 leading-[1.1]">
               Quiénes Somos
             </h1>

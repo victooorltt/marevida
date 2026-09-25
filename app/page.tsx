@@ -20,31 +20,25 @@ export default function Home() {
   return (
     <div className="min-h-screen bg-white text-stone-900 selection:bg-[#DA7715]/20 selection:text-[#DA7715]">
       {/* 1. HERO SECTION */}
-      <section className="relative overflow-hidden bg-white border-b border-stone-100">
-        <div className="relative max-w-7xl mx-auto min-h-[600px] lg:min-h-[680px] flex items-center px-4 sm:px-6 lg:px-8 py-16 lg:py-24">
-          {/* Strict Hero Standard: Right Visual Container */}
-          <div className="absolute inset-0 lg:left-auto lg:right-0 lg:w-[52%] h-full">
-            <img
-              src="/images/hero-home.webp"
-              alt="Marevida Centro de Estética Zaragoza"
-              className="w-full h-full object-cover object-center opacity-90 lg:opacity-100"
-            />
-            {/* Mobile Overlay */}
-            <div className="absolute inset-0 bg-gradient-to-t from-white/95 via-white/70 to-white/30 lg:hidden" />
-            {/* Desktop Left-to-Right Horizontal Fade */}
-            <div className="absolute inset-0 bg-gradient-to-r from-white from-0% via-white/60 via-30% to-transparent to-65% hidden lg:block" />
-            {/* Desktop Subtle Vertical Fade */}
-            <div className="absolute inset-0 bg-gradient-to-t from-white/40 via-transparent to-white/20 hidden lg:block" />
-          </div>
+      <section className="relative overflow-hidden bg-white border-b border-stone-100 py-16 lg:py-24 min-h-[600px] lg:min-h-[680px] flex items-center">
+        {/* Strict Hero Standard: Right Visual Container */}
+        <div className="absolute inset-0 lg:left-auto lg:right-0 lg:w-[52%] h-full">
+          <img
+            src="/images/hero-home.webp"
+            alt="Marevida Centro de Estética Zaragoza"
+            className="w-full h-full object-cover object-center opacity-90 lg:opacity-100"
+          />
+          {/* Mobile Overlay */}
+          <div className="absolute inset-0 bg-gradient-to-t from-white/95 via-white/70 to-white/30 lg:hidden" />
+          {/* Desktop Left-to-Right Horizontal Fade */}
+          <div className="absolute inset-0 bg-gradient-to-r from-white from-0% via-white/60 via-30% to-transparent to-65% hidden lg:block" />
+          {/* Desktop Subtle Vertical Fade */}
+          <div className="absolute inset-0 bg-gradient-to-t from-white/40 via-transparent to-white/20 hidden lg:block" />
+        </div>
 
-          {/* Left Content Container */}
+        {/* Left Content Container */}
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 w-full">
           <div className="relative z-10 max-w-2xl lg:max-w-xl">
-            {/* Tag Badge */}
-            <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#DA7715]/10 border border-[#DA7715]/20 text-[#DA7715] text-xs sm:text-sm font-medium mb-6 backdrop-blur-sm">
-              <span className="w-2 h-2 rounded-full bg-[#DA7715] animate-pulse" />
-              Centro de Estética Avanzada · Barrio Delicias
-            </div>
-
             {/* Main Headline */}
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-light tracking-tight text-stone-900 leading-[1.12]">
               Tu centro de estética de{" "}
