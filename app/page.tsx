@@ -242,12 +242,7 @@ export default function Home() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
             {/* Story & Leadership Info */}
-            <div className="lg:col-span-7">
-              <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-stone-100 text-stone-700 text-xs font-medium uppercase tracking-wider mb-4">
-                <Award className="w-3.5 h-3.5 text-[#DA7715]" />
-                Experiencia y Rigor Profesional
-              </div>
-
+            <div className="lg:col-span-7 space-y-6">
               <h2 className="text-3xl sm:text-4xl lg:text-5xl font-light text-stone-900 tracking-tight leading-[1.2]">
                 Dirigido por{" "}
                 <span className="font-semibold text-stone-900">
@@ -255,87 +250,51 @@ export default function Home() {
                 </span>
               </h2>
 
-              <p className="mt-6 text-stone-600 text-base sm:text-lg leading-relaxed">
-                Con más de dos décadas dedicada en cuerpo y alma a la belleza, la salud cutánea y el bienestar,
-                María José Álvarez González fundó Marevida con una premisa innegociable: proporcionar una atención
-                absolutamente personalizada, honesta y fundamentada en conocimientos técnicos sólidos.
+              <p className="text-stone-600 text-base sm:text-lg leading-relaxed">
+                Con más de dos décadas dedicada a la belleza, la salud cutánea y el bienestar,
+                María José Álvarez González fundó Marevida con una premisa clara: proporcionar una atención
+                absolutamente personalizada, honesta y de confianza en el Barrio Delicias.
               </p>
 
-              <blockquote className="mt-6 p-5 rounded-2xl bg-amber-50/50 border-l-4 border-[#DA7715] text-stone-800 italic text-base sm:text-lg">
-                &ldquo;Cada piel tiene una historia y necesidades únicas. No existen los tratamientos en serie;
-                nuestro compromiso es estudiar tu piel con detenimiento y ofrecerte solo aquello que de verdad
-                te aportará equilibrio, luz y salud a largo plazo.&rdquo;
-              </blockquote>
-
-              <div className="mt-8 flex flex-col sm:flex-row sm:items-center gap-4 text-sm text-stone-600">
+              <div className="flex flex-col sm:flex-row sm:items-center gap-4 text-sm text-stone-600 pt-2">
                 <div className="flex items-center gap-2">
                   <CheckCircle2 className="w-4 h-4 text-[#DA7715] flex-shrink-0" />
-                  <span>Diagnóstico personalizado previo sin compromiso</span>
+                  <span>Diagnóstico personalizado sin compromiso</span>
                 </div>
                 <div className="flex items-center gap-2">
                   <CheckCircle2 className="w-4 h-4 text-[#DA7715] flex-shrink-0" />
                   <span>Atención directa y seguimiento continuo</span>
                 </div>
               </div>
+
+              {/* Métricas en fila horizontal */}
+              <div className="pt-6 border-t border-stone-200/80 grid grid-cols-3 gap-4 sm:gap-6 text-left">
+                <div>
+                  <div className="text-2xl sm:text-3xl font-semibold text-stone-900">20+ Años</div>
+                  <div className="text-xs sm:text-sm text-stone-500 font-medium mt-1">Experiencia profesional</div>
+                </div>
+                <div>
+                  <div className="text-2xl sm:text-3xl font-semibold text-stone-900 flex items-center gap-1.5">
+                    4.7 <Star className="w-4 h-4 fill-amber-400 text-amber-400 inline" />
+                  </div>
+                  <div className="text-xs sm:text-sm text-stone-500 font-medium mt-1">Google Reviews</div>
+                </div>
+                <div>
+                  <div className="text-2xl sm:text-3xl font-semibold text-stone-900">100%</div>
+                  <div className="text-xs sm:text-sm text-stone-500 font-medium mt-1">Personalizado</div>
+                </div>
+              </div>
             </div>
 
-            {/* Stats & Trust Card */}
+            {/* Photo Column */}
             <div className="lg:col-span-5">
-              <div className="bg-stone-50 rounded-3xl p-8 sm:p-10 border border-stone-200/80 shadow-sm relative overflow-hidden">
-                <div className="absolute top-0 right-0 w-32 h-32 bg-[#DA7715]/10 rounded-full blur-2xl pointer-events-none" />
-
-                <div className="space-y-8">
-                  <div className="flex items-start gap-4">
-                    <div className="w-12 h-12 rounded-2xl bg-white border border-stone-200 flex items-center justify-center flex-shrink-0 text-[#DA7715] shadow-xs">
-                      <Clock className="w-6 h-6" />
-                    </div>
-                    <div>
-                      <div className="text-3xl sm:text-4xl font-semibold text-stone-900">20+ Años</div>
-                      <div className="text-sm font-medium text-stone-500 mt-1">
-                        De experiencia técnica ininterrumpida en estética profesional
-                      </div>
-                    </div>
-                  </div>
-
-                  <div className="flex items-start gap-4">
-                    <div className="w-12 h-12 rounded-2xl bg-white border border-stone-200 flex items-center justify-center flex-shrink-0 text-amber-500 shadow-xs">
-                      <Star className="w-6 h-6 fill-amber-400 text-amber-400" />
-                    </div>
-                    <div>
-                      <div className="text-3xl sm:text-4xl font-semibold text-stone-900 flex items-center gap-2">
-                        4.7 ★
-                      </div>
-                      <div className="text-sm font-medium text-stone-500 mt-1">
-                        Valoración media contrastada en Google por clientas satisfechas
-                      </div>
-                    </div>
-                  </div>
-
-                  <div className="flex items-start gap-4">
-                    <div className="w-12 h-12 rounded-2xl bg-white border border-stone-200 flex items-center justify-center flex-shrink-0 text-[#DA7715] shadow-xs">
-                      <ShieldCheck className="w-6 h-6" />
-                    </div>
-                    <div>
-                      <div className="text-3xl sm:text-4xl font-semibold text-stone-900">100%</div>
-                      <div className="text-sm font-medium text-stone-500 mt-1">
-                        Protocolos individualizados con aparatología y cosmética certificada
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                <div className="mt-8 pt-6 border-t border-stone-200 flex items-center justify-between">
-                  <div className="flex items-center gap-2 text-xs text-stone-500 font-medium">
-                    <MapPin className="w-4 h-4 text-[#DA7715]" />
-                    <span>Barrio Delicias, Zaragoza</span>
-                  </div>
-                  <a
-                    href="tel:655656743"
-                    className="text-xs font-semibold text-[#DA7715] hover:underline"
-                  >
-                    Pedir cita previa →
-                  </a>
-                </div>
+              <div className="relative rounded-3xl overflow-hidden shadow-md border border-stone-200/80 aspect-[4/3] lg:aspect-auto lg:h-[460px]">
+                <img
+                  src="/images/centro-detalle.webp"
+                  alt="Detalle de cabina en Marevida Centro de Estética Zaragoza"
+                  className="w-full h-full object-cover object-center"
+                  loading="lazy"
+                />
               </div>
             </div>
           </div>

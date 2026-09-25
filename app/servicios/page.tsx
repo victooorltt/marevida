@@ -232,27 +232,39 @@ export default function ServiciosPage() {
       {/* TARJETAS REGALO */}
       <section className="py-20 lg:py-24 bg-white border-y border-stone-100">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="max-w-4xl mx-auto bg-gradient-to-br from-white to-orange-50/60 border border-[#DA7715]/25 rounded-3xl p-8 sm:p-12 flex flex-col md:flex-row items-start md:items-center gap-8">
-            <div className="w-14 h-14 rounded-2xl bg-[#DA7715] text-white flex items-center justify-center shrink-0 shadow-md">
-              <Gift className="w-7 h-7" />
+          <div className="max-w-4xl mx-auto bg-white border border-[#DA7715]/20 rounded-3xl overflow-hidden shadow-sm grid grid-cols-1 md:grid-cols-12 items-center">
+            <div className="md:col-span-5 h-60 md:h-full min-h-[240px] relative">
+              <img
+                src="/images/tarjeta-regalo.webp"
+                alt="Bono regalo para tratamientos de estética en Marevida Zaragoza"
+                className="w-full h-full object-cover object-center"
+                loading="lazy"
+              />
             </div>
-            <div className="flex-1">
-              <h2 className="text-2xl sm:text-3xl font-light text-stone-900 tracking-tight">
-                Tarjetas regalo
-              </h2>
-              <p className="mt-3 text-stone-600 text-base leading-relaxed">
-                Facial, láser, presoterapia, masaje ayurvédico o Rose Therapy.
-                Adecuamos tu regalo a tu presupuesto, pregúntanos sin
-                compromiso.
-              </p>
+            <div className="md:col-span-7 p-8 sm:p-10 flex flex-col justify-between">
+              <div>
+                <div className="w-12 h-12 rounded-2xl bg-amber-50 text-[#DA7715] flex items-center justify-center mb-4">
+                  <Gift className="w-6 h-6" />
+                </div>
+                <h2 className="text-2xl sm:text-3xl font-light text-stone-900 tracking-tight">
+                  Tarjetas regalo
+                </h2>
+                <p className="mt-3 text-stone-600 text-base leading-relaxed">
+                  Facial, láser, presoterapia, masaje ayurvédico o Rose Therapy.
+                  Adecuamos tu regalo a tu presupuesto, pregúntanos sin
+                  compromiso.
+                </p>
+              </div>
+              <div className="mt-6">
+                <a
+                  href={PHONE_HREF}
+                  className="inline-flex items-center justify-center gap-2 px-7 py-3.5 rounded-full text-base font-medium text-white bg-[#DA7715] hover:bg-[#c4680e] shadow-md hover:shadow-lg transition-all"
+                >
+                  <Phone className="w-4 h-4" />
+                  <span>Regalar</span>
+                </a>
+              </div>
             </div>
-            <a
-              href={PHONE_HREF}
-              className="shrink-0 inline-flex items-center justify-center gap-2 px-7 py-3.5 rounded-full text-base font-medium text-white bg-[#DA7715] hover:bg-[#c4680e] shadow-md hover:shadow-lg transition-all"
-            >
-              <Phone className="w-4 h-4" />
-              <span>Regalar</span>
-            </a>
           </div>
         </div>
       </section>
